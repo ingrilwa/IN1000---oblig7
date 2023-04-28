@@ -1,0 +1,17 @@
+Oppgave 1b) 
+I en spilleliste vil vi som regel ha en bestemt rekkefølge, og dette får vi naturlig ved bruk av en liste fremfor en ordbok. Der et jo mulig å ha en fast rekkefølge i ordbok, men da må vi spesifikt lage en egen funksjon for å holde styr på dette, og det er unødvendig. Dette blir mer ryddig.
+
+I tillegg er det ikke nødvendig med ordbok og nøkkelverdier i dette tilfellet. Vi kan uansett identifisere artist ved hjelp av tittel, og det er derfor ikke vits i å organisere de som en ordbok. Liste er på alle måter mer lettvint.
+
+Oppgave 1c)
+Jeg tror konstruktøren ville blitt mer rotete og uoversiktlig om vi skulle lest inn filen her. Det er lettvint å ha en egen metode lesFraFil. Denne kan også endres enkelt på om det skulle være ønskelig. Her kan man også bruke en enkelt metode til å legge til flere filer i fremtiden.
+
+Oppgave 1d)
+Hvis rekkefølgen på artist og tittel hadde blir byttet om i datafilen, kunne vi enkelt endret i metoden lesFraFil fra slik det står nå:
+    artist = data[0]
+    tittel = data[1]
+.. til at det heller stod
+    tittel = data[0]
+    artist = data[1]
+
+Deretter hadde alt annet fungert som det gjorde tidligere, bare at de hadde byttet plass i objektet, slik at det hadde passet til datafilen vi hentet informasjon fra.
